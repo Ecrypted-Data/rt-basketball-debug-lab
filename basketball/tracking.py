@@ -15,10 +15,9 @@ class TrackingResult:
 
 
 class Tracker:
-    def __init__(self) -> None:
-        self._last_detection: Ball | None = None
-
     def update(self, frame_index: int, fps: float, detection: Ball | None) -> TrackingResult:
-        if detection is not None:
-            self._last_detection = detection
-        return TrackingResult(frame_index, frame_index / fps, self._last_detection)
+        # 只把"当前帧"的检测结果当作当前位置：
+        # 球出画时 detection 为 None，必须原样传递（ball=None → status=lost、坐标留空），
+        # 不能缓存出画前的旧检测结果再当作当前位置返回，
+        # 否则出画后会把旧位置误标成 visible 的当前位置（本练习的故障根因）。
+        return TrackingResult(frame_index, frame_index / fps, detection)
