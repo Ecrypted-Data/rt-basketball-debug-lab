@@ -1,0 +1,160 @@
+{
+  "input_sha256": "f244ae13c9472ebb047d0c09caaaf41b947cad22decb66333c97fb82aff171a2",
+  "frames": 302,
+  "before_visible": 302,
+  "after_visible": 230,
+  "lost_frame_range": [
+    143,
+    214
+  ],
+  "lost_count": 72,
+  "non_lost_csv_rows_identical": true,
+  "selected_rows": {
+    "0": {
+      "before": {
+        "frame": "0",
+        "time_s": "0.000",
+        "status": "visible",
+        "center_x": "174",
+        "center_y": "286",
+        "radius": "54"
+      },
+      "after": {
+        "frame": "0",
+        "time_s": "0.000",
+        "status": "visible",
+        "center_x": "174",
+        "center_y": "286",
+        "radius": "54"
+      }
+    },
+    "142": {
+      "before": {
+        "frame": "142",
+        "time_s": "2.366",
+        "status": "visible",
+        "center_x": "14",
+        "center_y": "315",
+        "radius": "59"
+      },
+      "after": {
+        "frame": "142",
+        "time_s": "2.366",
+        "status": "visible",
+        "center_x": "14",
+        "center_y": "315",
+        "radius": "59"
+      }
+    },
+    "143": {
+      "before": {
+        "frame": "143",
+        "time_s": "2.383",
+        "status": "visible",
+        "center_x": "14",
+        "center_y": "315",
+        "radius": "59"
+      },
+      "after": {
+        "frame": "143",
+        "time_s": "2.383",
+        "status": "lost",
+        "center_x": "",
+        "center_y": "",
+        "radius": ""
+      }
+    },
+    "175": {
+      "before": {
+        "frame": "175",
+        "time_s": "2.916",
+        "status": "visible",
+        "center_x": "14",
+        "center_y": "315",
+        "radius": "59"
+      },
+      "after": {
+        "frame": "175",
+        "time_s": "2.916",
+        "status": "lost",
+        "center_x": "",
+        "center_y": "",
+        "radius": ""
+      }
+    },
+    "214": {
+      "before": {
+        "frame": "214",
+        "time_s": "3.566",
+        "status": "visible",
+        "center_x": "14",
+        "center_y": "315",
+        "radius": "59"
+      },
+      "after": {
+        "frame": "214",
+        "time_s": "3.566",
+        "status": "lost",
+        "center_x": "",
+        "center_y": "",
+        "radius": ""
+      }
+    },
+    "215": {
+      "before": {
+        "frame": "215",
+        "time_s": "3.582",
+        "status": "visible",
+        "center_x": "15",
+        "center_y": "210",
+        "radius": "54"
+      },
+      "after": {
+        "frame": "215",
+        "time_s": "3.582",
+        "status": "visible",
+        "center_x": "15",
+        "center_y": "210",
+        "radius": "54"
+      }
+    },
+    "240": {
+      "before": {
+        "frame": "240",
+        "time_s": "3.999",
+        "status": "visible",
+        "center_x": "153",
+        "center_y": "232",
+        "radius": "51"
+      },
+      "after": {
+        "frame": "240",
+        "time_s": "3.999",
+        "status": "visible",
+        "center_x": "153",
+        "center_y": "232",
+        "radius": "51"
+      }
+    },
+    "301": {
+      "before": {
+        "frame": "301",
+        "time_s": "5.015",
+        "status": "visible",
+        "center_x": "159",
+        "center_y": "326",
+        "radius": "48"
+      },
+      "after": {
+        "frame": "301",
+        "time_s": "5.015",
+        "status": "visible",
+        "center_x": "159",
+        "center_y": "326",
+        "radius": "48"
+      }
+    }
+  },
+  "decoded_video_pixel_equal_frames": 229,
+  "decoded_video_pixel_changed_frames": 73
+}

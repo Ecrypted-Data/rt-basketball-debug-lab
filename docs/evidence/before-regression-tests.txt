@@ -1,0 +1,51 @@
+test_all_real_video_results_match_current_detection (test_tracking.TrackingTests.test_all_real_video_results_match_current_detection) ... FAIL
+test_cli_exports_empty_coordinates_during_loss (test_tracking.TrackingTests.test_cli_exports_empty_coordinates_during_loss) ... FAIL
+test_initial_missing_detection (test_tracking.TrackingTests.test_initial_missing_detection) ... ok
+test_visible_lost_and_reappeared (test_tracking.TrackingTests.test_visible_lost_and_reappeared) ... FAIL
+
+======================================================================
+FAIL: test_all_real_video_results_match_current_detection (test_tracking.TrackingTests.test_all_real_video_results_match_current_detection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yang/Documents/Codex/2026-11-13/https-gcnhkq914dqv-feishu-cn-wiki-joxswv4pzipcdckvl0mcqknhnag/work/prototype/rt-basketball-debug-lab/tests/test_tracking.py", line 35, in test_all_real_video_results_match_current_detection
+    self.assertEqual(result.ball, detect_ball(frame), f'frame {result.frame_index}')
+AssertionError: Ball(x=14, y=315, radius=59) != None : frame 143
+
+======================================================================
+FAIL: test_cli_exports_empty_coordinates_during_loss (test_tracking.TrackingTests.test_cli_exports_empty_coordinates_during_loss)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yang/Documents/Codex/2026-11-13/https-gcnhkq914dqv-feishu-cn-wiki-joxswv4pzipcdckvl0mcqknhnag/work/prototype/rt-basketball-debug-lab/tests/test_tracking.py", line 54, in test_cli_exports_empty_coordinates_during_loss
+    self.assertEqual((row['status'], row['center_x'], row['center_y'], row['radius']),
+AssertionError: Tuples differ: ('visible', '14', '315', '59') != ('lost', '', '', '')
+
+First differing element 0:
+'visible'
+'lost'
+
+- ('visible', '14', '315', '59')
++ ('lost', '', '', '')
+
+======================================================================
+FAIL: test_visible_lost_and_reappeared (test_tracking.TrackingTests.test_visible_lost_and_reappeared)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yang/Documents/Codex/2026-11-13/https-gcnhkq914dqv-feishu-cn-wiki-joxswv4pzipcdckvl0mcqknhnag/work/prototype/rt-basketball-debug-lab/tests/test_tracking.py", line 21, in test_visible_lost_and_reappeared
+    self.assertEqual([r.status for r in results], ['visible', 'lost', 'lost', 'visible'])
+AssertionError: Lists differ: ['visible', 'visible', 'visible', 'visible'] != ['visible', 'lost', 'lost', 'visible']
+
+First differing element 1:
+'visible'
+'lost'
+
+- ['visible', 'visible', 'visible', 'visible']
+?              ^^ ^^^^    ^^ ^^^^
+
++ ['visible', 'lost', 'lost', 'visible']
+?              ^^ ^    ^^ ^
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.694s
+
+FAILED (failures=3)
