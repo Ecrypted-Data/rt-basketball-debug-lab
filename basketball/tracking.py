@@ -15,10 +15,5 @@ class TrackingResult:
 
 
 class Tracker:
-    def __init__(self) -> None:
-        self._last_detection: Ball | None = None
-
     def update(self, frame_index: int, fps: float, detection: Ball | None) -> TrackingResult:
-        if detection is not None:
-            self._last_detection = detection
-        return TrackingResult(frame_index, frame_index / fps, self._last_detection)
+        return TrackingResult(frame_index, frame_index / fps, detection)
